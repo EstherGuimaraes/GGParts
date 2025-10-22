@@ -11,12 +11,18 @@ body {
     color: #000000;
     line-height: 1.6;
 }
-
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 /* Header */
 .header {
     background-color: #FFF5CC;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
 }
 
 .header-content {
@@ -28,50 +34,39 @@ body {
     align-items: center;
 }
 
-/* Logo */
-.logo {
+.header-nav-icon {
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
 }
+
+/* Logo */
 
 .gear-icon {
     font-size: 24px;
     color: #000000;
 }
 
-.logo-text {
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
+.logo img {
+    height: 50px;
+    width: auto;
 }
 
-.logo-gg {
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.logo-parts {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-}
 
 /* Ícones de navegação */
-.nav-icons {
+.nav-icon img {
     display: flex;
     gap: 20px;
 }
 
-.nav-icon {
-    font-size: 20px;
-    color: #000000;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.nav-icon img {
+    height: 30px;
+    width: 30px;
 }
 
-.nav-icon:hover {
+.nav-icon img:hover {
     color: #666666;
 }
 

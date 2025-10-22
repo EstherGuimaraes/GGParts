@@ -10,9 +10,6 @@ body {
     background-color: #ffffff;
     color: #000000;
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Header */
@@ -20,6 +17,7 @@ body {
     background-color: #FFF5CC;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
 }
 
 .header-content {
@@ -32,34 +30,47 @@ body {
 }
 
 /* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .gear-icon {
     font-size: 24px;
     color: #000000;
 }
 
-.logo-text {
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+/* Ícones de navegação */
+.nav-icons {
     display: flex;
-    align-items: baseline;
-    gap: 4px;
+    gap: 20px;
 }
 
-.logo-gg {
-    font-size: 28px;
-    font-weight: bold;
+.nav-icon {
+    font-size: 20px;
     color: #000000;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-.logo-parts {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
+.nav-icon:hover {
+    color: #666666;
 }
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 h1 {
     text-align: center;
@@ -118,4 +129,108 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 15px;
+    }
+    
+    .logo-gg {
+        font-size: 24px;
+    }
+    
+    .logo-parts {
+        font-size: 16px;
+    }
+    
+    .nav-icons {
+        gap: 15px;
+    }
+    
+    .nav-icon {
+        font-size: 18px;
+    }
+    
+    .main-content {
+        padding: 30px 15px;
+    }
+    
+    .form-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .registration-form {
+        gap: 25px;
+    }
+    
+    .form-input {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+    
+    .submit-button {
+        padding: 12px 25px;
+        font-size: 14px;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 0;
+    }
+    
+    .logo {
+        gap: 6px;
+    }
+    
+    .gear-icon {
+        font-size: 20px;
+    }
+    
+    .logo-gg {
+        font-size: 20px;
+    }
+    
+    .logo-parts {
+        font-size: 14px;
+    }
+    
+    .nav-icons {
+        gap: 12px;
+    }
+    
+    .nav-icon {
+        font-size: 16px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .form-title::after {
+        width: 80px;
+    }
+    
+    .registration-form {
+        gap: 20px;
+    }
+    
+    .form-label {
+        font-size: 14px;
+    }
+    
+    .form-input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }

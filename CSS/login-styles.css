@@ -10,9 +10,6 @@ body {
     background-color: #ffffff;
     color: #000000;
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Header */
@@ -20,6 +17,7 @@ body {
     background-color: #FFF5CC;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
 }
 
 .header-content {
@@ -32,34 +30,17 @@ body {
 }
 
 /* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .gear-icon {
     font-size: 24px;
     color: #000000;
 }
 
-.logo-text {
-    display: flex;
-    align-items: baseline;
-    gap: 4px;
+.logo img {
+    height: 50px;
+    width: auto;
 }
 
-.logo-gg {
-    font-size: 28px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.logo-parts {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-}
 
 /* Ícones de navegação */
 .nav-icons {
@@ -77,6 +58,19 @@ body {
 .nav-icon:hover {
     color: #666666;
 }
+
+/* Conteúdo principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /* Conteúdo principal */
 .main-content {
