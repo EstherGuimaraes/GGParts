@@ -19,7 +19,7 @@ body {
 }
 
 .imgLogo {
-    height: 60px; /* Ajuste o tamanho do logo */
+    height: 1%; /* Ajuste o tamanho do logo */
     width: auto; /* Mantém a proporção da imagem */
 }
 
@@ -27,18 +27,21 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
 }
 
 .botao-pesquisa img, .botao-pessoa img, .botao-carrinho img {
-    height: 40px; /* Ajuste o tamanho dos ícones */
-    width: 40px; /* Ajuste o tamanho dos ícones */
+    height: 10%; /* Ajuste o tamanho dos ícones */
+    width: 10%; /* Ajuste o tamanho dos ícones */
 }
+
 .botao-pesquisa {
-    margin-right: 15%;
+    margin-left: auto;
 }
-.botao-pessoa {
-    margin-right: 2%;
+
+.botao-pessoa{
+    margin-left: 20%;
 }
-.botao-carrinho {
-    margin-right: 5%;
-}
+
+

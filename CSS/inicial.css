@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0%;
+    background-color: #fffba7;
+    border-bottom: 1px solid #ddd;
+}
+
+.imgLogo {
+    height: 1%; /* Ajuste o tamanho do logo */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.botao-pesquisa, .botao-pessoa, .botao-carrinho {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.botao-pesquisa img, .botao-pessoa img, .botao-carrinho img {
+    height: 10%; /* Ajuste o tamanho dos ícones */
+    width: 10%; /* Ajuste o tamanho dos ícones */
+}
+
+.botao-pesquisa {
+    margin-left: auto;
+}
+
+.botao-pessoa{
+    margin-left: 20%;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+    margin-top: 20%;
+}
+
+.texto{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    color: #333;
+    margin-top: 3%;  
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px;
+}
+
+.card {
+    width: 300px; /* Largura do card */
+    height: 300px; /* Altura do card */
+    background-color: #ffe87c; /* Cor de fundo amarela */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Borda padrão invisível */
+    border: 3px solid transparent;
+}
+
+.card img {
+    width: 60px; /* Tamanho do ícone */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
