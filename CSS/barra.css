@@ -11,10 +11,15 @@ body {
     color: #000000;
     line-height: 1.6;
 }
-
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 /* Header */
 .header {
-    background-color: #FFF5CC;
+    background-color: #fffba7;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -22,6 +27,14 @@ body {
 
 .header-content {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-icon {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -43,32 +56,18 @@ body {
 
 
 /* Ícones de navegação */
-.nav-icons {
+.nav-icon img {
     display: flex;
     gap: 20px;
 }
 
-.nav-icon {
-    font-size: 20px;
-    color: #000000;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.nav-icon img {
+    height: 30px;
+    width: 30px;
 }
 
-.nav-icon:hover {
+.nav-icon img:hover {
     color: #666666;
-}
-
-/* Conteúdo principal */
-.main-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.form-container {
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 

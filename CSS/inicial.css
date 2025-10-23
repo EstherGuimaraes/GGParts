@@ -11,10 +11,15 @@ body {
     color: #000000;
     line-height: 1.6;
 }
-
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 /* Header */
 .header {
-    background-color: #FFF5CC;
+    background-color: #fffba7;
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -22,6 +27,14 @@ body {
 
 .header-content {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-icon {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -43,22 +56,19 @@ body {
 
 
 /* Ícones de navegação */
-.nav-icons {
+.nav-icon img {
     display: flex;
     gap: 20px;
 }
 
-.nav-icon {
-    font-size: 20px;
-    color: #000000;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.nav-icon img {
+    height: 30px;
+    width: 30px;
 }
 
-.nav-icon:hover {
+.nav-icon img:hover {
     color: #666666;
 }
-
 /* Conteúdo principal */
 .main-content {
     max-width: 1200px;
@@ -77,7 +87,7 @@ h1 {
     margin: 20px 0;
     font-size: 32px;
     color: #333;
-    margin-top: 20%;
+    margin-top: 1%;
 }
 
 .texto{
@@ -93,6 +103,7 @@ h2 {
     margin: 20px 0;
     font-size: 28px;
     color: #333;
+    margin-top: -2%;
 }
 .cards-container {
     display: flex;
@@ -101,12 +112,77 @@ h2 {
     padding: 20px;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.carousel-text {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  color: white;
+  text-align: right;
+  max-width: 45%;
+}
+
+.carousel-text h2 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.catalogo {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.button:hover {
+  color: #ffeb3b;
+}
+
+
 .card {
     width: 300px; /* Largura do card */
     height: 300px; /* Altura do card */
     background-color: #ffe87c; /* Cor de fundo amarela */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
     
     display: flex;
     flex-direction: column;
@@ -131,106 +207,149 @@ h2 {
     color: #000000;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .header-content {
-        padding: 0 15px;
-    }
-    
-    .logo-gg {
-        font-size: 24px;
-    }
-    
-    .logo-parts {
-        font-size: 16px;
-    }
-    
-    .nav-icons {
-        gap: 15px;
-    }
-    
-    .nav-icon {
-        font-size: 18px;
-    }
-    
-    .main-content {
-        padding: 30px 15px;
-    }
-    
-    .form-title {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-    
-    .registration-form {
-        gap: 25px;
-    }
-    
-    .form-input {
-        padding: 12px 18px;
-        font-size: 14px;
-    }
-    
-    .submit-button {
-        padding: 12px 25px;
-        font-size: 14px;
-        align-self: stretch;
-    }
+.card:hover {
+    /* Adiciona a borda amarela ao passar o mouse */
+    border: 3px solid #FFD700;
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 
-@media (max-width: 480px) {
-    .header {
-        padding: 15px 0;
-    }
-    
-    .logo {
-        gap: 6px;
-    }
-    
-    .gear-icon {
-        font-size: 20px;
-    }
-    
-    .logo-gg {
-        font-size: 20px;
-    }
-    
-    .logo-parts {
-        font-size: 14px;
-    }
-    
-    .nav-icons {
-        gap: 12px;
-    }
-    
-    .nav-icon {
-        font-size: 16px;
-    }
-    
-    .form-title {
-        font-size: 24px;
-        margin-bottom: 25px;
-    }
-    
-    .form-title::after {
-        width: 80px;
-    }
-    
-    .registration-form {
-        gap: 20px;
-    }
-    
-    .form-label {
-        font-size: 14px;
-    }
-    
-    .form-input {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    
-    .submit-button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  
+}
+
+.produto {
+  background-color: #fffba7;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  overflow: hidden;
+  width: 180px;
+  transition: transform 0.2s ease;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  border: 3px solid #FFD700;
+    cursor: pointer;
+}
+
+.produto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.produto h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin: 8px 10px 2px;
+}
+
+.produto p {
+  font-size: 15px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+.produto button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  margin: 8px 10px 12px;
+  cursor: pointer;
+  float: right;
+}
+
+.produto button:hover {
+  text-decoration: underline;
+  color: #e64a19;
+}
+
+
+.footer {
+  padding: 30px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #fffba7;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 40%;
+  margin-left: 5%;
+}
+
+.footer-left p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.5;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.footer-center {
+  flex: 1;
+  font-size: 15px;
+}
+
+.footer-center h4 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-center p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.footer-center i {
+  margin-right: 5px;
+  color: #e64a19;
+}
+
+.footer-right img {
+    width: 5%;
+    margin-bottom: 10px;
+    margin-top: 7%;
+
+}
+
+.footer-right i {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 50%;
+  padding: 5px 8px;
+}
+
+.footer-right a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #e64a19;
 }
