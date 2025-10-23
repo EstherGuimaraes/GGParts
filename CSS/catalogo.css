@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* Header */
+.header {
+    background-color: #fffba7;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-icon {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.gear-icon {
+    font-size: 24px;
+    color: #000000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+/* Ícones de navegação */
+.nav-icon img {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icon img {
+    height: 30px;
+    width: 30px;
+}
+
+.nav-icon img:hover {
+    color: #666666;
+}
+
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+}
+
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    
+  }
+  
+  .produto {
+    background-color: #fffba7;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 180px;
+    transition: transform 0.2s ease;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+    border: 3px solid #FFD700;
+      cursor: pointer;
+  }
+  
+  .produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .produto h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 8px 10px 2px;
+  }
+  
+  .produto p {
+    font-size: 15px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .produto button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 15px;
+    margin: 8px 10px 12px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .produto button:hover {
+    text-decoration: underline;
+    color: #e64a19;
+  }
+    
